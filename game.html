@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang=eng > 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 
+        Buzz and the Long Way Home
+    </title> 
+    <style>
+        body {
+            height: 100%;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+			display: flex;
+            background-color: ghostwhite;
+        }
+		h1 {
+			margin-right: 5vmin;
+			font-family: Impact, Charcoal, sans-serif;
+    		font-size: 45px;
+		}
+        #game-board {
+            background-image: url(pics/LayoutForBuzz.jpg);
+			background-size: 100vmin;
+            width: 100vmin;
+            height: 100vmin;
+            display: grid;
+            grid-template-rows: repeat(21, 1fr);
+            grid-template-columns: repeat(21, 1fr);
+        }
+		.buzz {
+			height: 4vmin;
+			width: 3vmin;
+			margin-left: 1vmin;
+			margin-top: .5vmin;
+		}
+		.paper {
+			height: 4vmin;
+			width: 3vmin;
+			margin-left: 1vmin;
+		}
+		.culc {
+			height: 9.52vmin;
+			width: 9.52vmin;
+		}
+		img {
+			height: 15px;
+        	width: 10px;
+		}
+    </style>
+    <script src="game.js" defer type="module"></script>
+</head>
+<body> 
+	<h1 class="GPA">GPA: 0.0</h1>
+	<script src="collisions.js"></script>
+	<br>
+	<div id="game-board"></div>
+</body> 
+  
+</html> 
